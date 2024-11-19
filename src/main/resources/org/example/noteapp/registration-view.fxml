@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.noteapp.controllers.RegistrationController">
+   <children>
+      <Label layoutX="195.0" layoutY="60.0" prefHeight="53.0" prefWidth="297.0" text="Регистрация" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="registrationPassword" layoutX="182.0" layoutY="235.0" prefHeight="25.0" prefWidth="237.0" promptText="пароль" />
+      <TextField fx:id="registrationLogin" layoutX="182.0" layoutY="137.0" prefHeight="25.0" prefWidth="237.0" promptText="логин" />
+      <TextField fx:id="registrationEmail" layoutX="182.0" layoutY="188.0" prefHeight="25.0" prefWidth="237.0" promptText="почта" />
+      <Button layoutX="182.0" layoutY="293.0" mnemonicParsing="false" onAction="#registrationButtonClick" text="Зарегистрироваться" />
+      <Label layoutX="182.0" layoutY="267.0" onMouseClicked="#registredLabelClick" prefHeight="17.0" prefWidth="191.0" text="Уже зарегистрированы ?" textFill="#2600ff" />
+   </children>
+</AnchorPane>
